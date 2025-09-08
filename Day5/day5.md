@@ -4,14 +4,18 @@ Today I explored **interactive containers** using Ubuntu and Alpine.
 
 ---
 
+## Docker Day 5 Ubuntu and Alpine
+```bash
 Ubuntu Interactive Container
 docker run -it --name ubuntu-test ubuntu
+
 ls
 pwd
 cat /etc/os-release
 exit
 
 Alpine Interactive Container
+
 docker run -it --name alpine-test alpine
 ls
 pwd
