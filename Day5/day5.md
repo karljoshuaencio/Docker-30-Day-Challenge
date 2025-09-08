@@ -8,14 +8,12 @@ Today I explored **interactive containers** using Ubuntu and Alpine.
 ```bash
 Ubuntu Interactive Container
 docker run -it --name ubuntu-test ubuntu
-
 ls
 pwd
 cat /etc/os-release
 exit
 
 Alpine Interactive Container
-
 docker run -it --name alpine-test alpine
 ls
 pwd
@@ -24,7 +22,6 @@ exit
 
 
 Reattach to Container
-
 docker start -ai ubuntu-test
 
 Cleanup
