@@ -6,7 +6,7 @@
 ## 🔹 Step 1: Write the App  
 **app.py**  
 ```python
-print("Hello World from inside Docker! 🚀")
+print("Hello from Day 7 Docker!!!")
 
 # Use official lightweight Python image
 FROM python:3.9-slim
