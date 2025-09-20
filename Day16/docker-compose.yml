@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  webapp:
+    image: nginx
+    container_name: webapp
+    ports:
+      - "8080:80"
+    volumes:
+      - ./webapp/index.html:/usr/share/nginx/html/index.html
+    networks:
+      - appnet
+
+  mysql-db:
+    image: mysql:8.0
+    container_name: mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: mydb
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - appnet
+
+networks:
+  appnet:
+
+volumes:
+  mysql_data:
