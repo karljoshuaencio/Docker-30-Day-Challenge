@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 17 - Docker Redis Setup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f5f5f5;
+      padding: 50px;
+    }
+    h1 {
+      color: #d82c20;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+    p {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Day 17: Redis Caching Layer</h1>
+    <p>
+      Nginx is serving this static page.<br>
+      MySQL and Redis are running in containers via Docker Compose.
+    </p>
+    <p>
+      ✅ Redis is running on port <strong>6379</strong>.<br>
+      Try connecting with: <code>docker exec -it redis redis-cli</code>
+    </p>
+  </div>
+</body>
+</html>
