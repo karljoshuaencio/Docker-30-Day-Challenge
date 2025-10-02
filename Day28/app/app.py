@@ -1,0 +1,1 @@
+print("Hello from Docker in CI/CD with GitHub Actions 🚀")
